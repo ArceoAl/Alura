@@ -1,0 +1,26 @@
+<meta	charset = "utf-8">
+  <canvas width="600" height="400"> </canvas>
+  <script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "lightgrey" //Fondo
+    pincel.fillRect(0,0,1000,1000)
+
+    pincel.fillStyle = "black" //Triangulo grande
+    pincel.beginPath();
+    pincel.moveTo(50,30);
+    pincel.lineTo(50,380);
+    pincel.lineTo(400,380);
+    pincel.fill();
+
+    pincel.fillStyle = "white" //Triangulo pequeno
+    pincel.beginPath();
+    pincel.moveTo(100,155);
+    pincel.lineTo(100,330);
+    pincel.lineTo(275,330);
+    pincel.fill();
+
+
+</script>

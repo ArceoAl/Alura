@@ -1,0 +1,31 @@
+<meta	charset = "utf-8">
+  <canvas width="600" height="400"> </canvas>
+  <script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+
+    pincel.fillStyle = "lightgrey" //Fondo
+    pincel.fillRect(0,0,600,400)
+
+    pincel.fillStyle = "darkgreen"  //Cabeza creeper
+    pincel.fillRect(150,20,350,300)
+
+    pincel.fillStyle = "black"  //ojo izquierdo
+    pincel.fillRect(190,75,90,90)
+
+    pincel.fillStyle = "black" //ojo derecho
+    pincel.fillRect(370,75,90,90)
+
+    pincel.fillStyle = "black" //nariz
+    pincel.fillRect(280,165,90,100)   
+
+    pincel.fillStyle = "black" //bocaizq
+    pincel.fillRect(240,210,40,110) 
+
+    pincel.fillStyle = "black" //bocader
+    pincel.fillRect(370,210,40,110) 
+
+
+  </script>
